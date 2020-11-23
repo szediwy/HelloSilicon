@@ -1,6 +1,6 @@
 # HelloSilicon
 
-An attempt with assembly on the _New Apple Silicon Macs_.
+An attempt with assembly on the new Apple Silicon Macs.
 
 ## Introduction
 
@@ -10,11 +10,11 @@ In this repository, I will code along with the book [Programming with 64-Bit ARM
 
 While I pretty much assume that people who made it here meet most if not all required prerequisites, it doesn't hurt to list them. 
 
-* You need [Xcode 12.2](https://developer.apple.com/xcode/), and to make things easier, the command line tools should be installed. This ensures that the tools are found in default locations (namely `/usr/bin`). If you are not sure that the tools are installed, check _Preferences → Locations_ in Xcode or run `xcode-select --install`.
+* You need [Xcode 12.2](https://developer.apple.com/xcode/) or later, and to make things easier, the command line tools should be installed. This ensures that the tools are found in default locations (namely `/usr/bin`). If you are not sure that the tools are installed, check _Preferences → Locations_ in Xcode or run `xcode-select --install`.
 
-* All application samples also require [macOS Big Sur](https://developer.apple.com/macos/), [iOS 14](https://developer.apple.com/ios/) or their respective watchOS or tvOS equivalents. Especially for the later three systems it is not a necessity per-se (neither is Xcode 12), but it makes things a lot simpler.
+* All application samples also require [macOS Big Sur](https://developer.apple.com/macos/), [iOS 14](https://developer.apple.com/ios/) or their respective watchOS or tvOS equivalents. Especially for the later three systems it is not a necessity per-se (neither is Xcode 12.2), but it makes things a lot simpler.
 
-* Finally, while all samples can be adjusted to work on the iPhone and all other Apple's ARM64 devices, for best results you should have access to an [Apple Silicon Mac](https://www.apple.com/newsroom/2020/11/introducing-the-next-generation-of-mac/) (Formerly known as the MWMNSA, the _Machine We Must Not Speak About).
+* Finally, while all samples can be adjusted to work on the iPhone and all other of Apple's ARM64 devices, for best results you should have access to an [Apple Silicon Mac](https://www.apple.com/newsroom/2020/11/introducing-the-next-generation-of-mac/) (Formerly known as the MWMNSA, the _Machine We Must Not Speak About).
 
 ## Changes To The Book
 
@@ -25,7 +25,7 @@ While Linux and Darwin are based on a similar idea and may appear to be very sim
 
 Linux and Darwin, which were both inspired by [AT&T Unix System V](http://www.unix.org/what_is_unix/history_timeline.html), are significantly different at the level we are looking at. For the listings in the book, this mostly concerns system calls (i.e. when we want the Kernel to do someting for us), and the way Darwin accesses memory. 
 
-You should be able to read the book, and find the differences for Apple Silicon here explained in details below. I have organized them by the headers in the book for easy reference.
+You should be able to read the book, and read about the differences for Apple Silicon side by side below. The headlines in this document follow those in the book.
 
 ## Chapter 1
 
